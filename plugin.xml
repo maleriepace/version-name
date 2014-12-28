@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.phonegap.plugins.versionname" version="0.0.1">
+    <name>VersionName</name>
+    <description>Cordova Get Version Name</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,phonegap,version</keywords>
+    <js-module src="www/versionname.js" name="versionname">
+        <clobbers target="versionname" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VersionName">
+                <param name="ios-package" value="VersionName"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/VersionName.h" />
+        <source-file src="src/ios/VersionName.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VersionName">
+                <param name="android-package" value="VersionName"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/VersionName.java" />
+    </platform>
+</plugin>
