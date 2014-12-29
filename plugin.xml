@@ -25,6 +25,6 @@
                 <param name="android-package" value="VersionName"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/VersionName.java" />
+        <source-file src="src/android/VersionName.java" target-dir="src/com/phonegap/plugins/versionname" />
     </platform>
 </plugin>
