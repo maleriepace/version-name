@@ -4,7 +4,7 @@
 //  Created by Alex Bonine 07/19/2012
 //
 
-package com.phonegap.plugins;
+package com.phonegap.plugins.versionname;
 
 import org.json.JSONArray;
 

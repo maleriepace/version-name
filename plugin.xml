@@ -20,9 +20,9 @@
     </platform>
 
     <platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="VersionName">
-                <param name="android-package" value="VersionName"/>
+                <param name="android-package" value="com.phonegap.plugins.versionname.VersionName"/>
             </feature>
         </config-file>
         <source-file src="src/android/VersionName.java" target-dir="src/com/phonegap/plugins/versionname" />
